@@ -25,7 +25,7 @@ class PatientDetails(models.Model):
 	gender 		= 	models.CharField(max_length=12, choices=GENDER)
 	mobileNo    =   models.CharField('Mobile Number',max_length=10)
 	address		= 	models.TextField(blank=True)
-	timestamp 	= 	models.DateTimeField(auto_now_add=True)
+	timestamp 	= 	models.DateTimeField(db_index=True,auto_now_add=True)
 	patientimg	=	models.ImageField('Patient photo',blank=True,null=True,upload_to='patientimg')
 	bloodgroup	=   models.CharField('Blood Group',max_length=12, choices=BLOODGROUP, blank=True)
 	diseases	=	models.ManyToManyField(Disease,blank=True)
