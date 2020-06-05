@@ -2,7 +2,7 @@ cachetools==3.0.0
 certifi==2018.11.29
 chardet==3.0.4
 dataclasses==0.6
-Django==2.1.4
+Django==2.2.13
 django-admin-tools==0.8.1
 django-grappelli==2.12.1
 django-jet==1.0.8
